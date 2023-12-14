@@ -3,7 +3,7 @@ This repo is for demonstration purposes only. I've created it to practice my mig
 And to share my first experience with Intellij IDEA. It contains examples for:
 
 - DataTypes
-- IF ELSE conditionals
+- IF ELSE Conditionals
 - While, Switch and For loops
 - Usage of static and final keywords
 - OOP,  Encapsulation, Abstraction, Polymorphism, Inheritance
