@@ -1,5 +1,5 @@
 package Classes;
-
+//inheritance, method override
 public class Child extends Person {
 
     int age;

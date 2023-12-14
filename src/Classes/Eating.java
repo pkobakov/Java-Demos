@@ -1,5 +1,7 @@
 package Classes;
 
+// abstraction
+
 public abstract class Eating {
     public abstract String Eat();
     public String IsHungry(){

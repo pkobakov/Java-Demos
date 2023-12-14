@@ -1,4 +1,7 @@
 public class Types {
+
+    // data Types
+
   private int first;
   private int second;
   double doubleOne;

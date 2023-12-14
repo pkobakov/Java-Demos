@@ -1,6 +1,9 @@
 package Classes;
 
 public class MyThread extends Thread{
+
+    //inheritance
+
     @Override
     public void run() {
 

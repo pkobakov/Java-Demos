@@ -14,7 +14,9 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 
-/*        Types empty = new Types();
+        // data types
+
+        Types empty = new Types();
         System.out.println(empty.PrintDefault());
 
         Types intTypes = new Types(3, 4);
@@ -29,31 +31,42 @@ public class Main {
         int lengthInput = Integer.parseInt(JOptionPane.showInputDialog("Enter array length"));
         Collections array = new Collections(lengthInput);
 
+        // for loop
+
         for (int i = 0; i < array.length; i++) {
-          array.numbers[i] = i + 1;
+            array.numbers[i] = i + 1;
         }
 
+        // streams
+
         System.out.println(Arrays.stream(array.numbers)
-                  .mapToObj(String::valueOf)
-                  .collect(Collectors.joining(", ")));
+                .mapToObj(String::valueOf)
+                .collect(Collectors.joining(", ")));
+
+        // collections
 
         Collections list = new Collections();
         Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
-        while(!name.equals("End")){
+        String command = scanner.nextLine();
+        while(!command.equals("End")){
 
-            list.names.add(name);
-            name = scanner.nextLine();
+            list.names.add(command);
+            command = scanner.nextLine();
         }
 
         String result = list.names.stream().map(Objects::toString).collect(Collectors.joining(" and "));
         System.out.println(result);
 
+        // final, if else, Objects
+
+        final int maxAge = 12;
         String name = JOptionPane.showInputDialog("Enter the Person name");
         int age = Integer.parseInt(JOptionPane.showInputDialog("Enter the Person age"));
 
+        // polymorphism
+
         Person person;
-        if(age < 12){
+        if(age < maxAge){
             person = new Child(name, age);
         } else {
             String university = JOptionPane.showInputDialog("Enter University name");
@@ -72,9 +85,9 @@ public class Main {
             System.out.println(sum);
         }
 
+        //StringBuilder, working with files
+
         try{
-
-
             StringBuilder sb = new StringBuilder();
             sb.append("Roses are red");
             sb.append(System.lineSeparator());
@@ -99,6 +112,7 @@ public class Main {
         }    catch (IOException e){
             e.printStackTrace();
         }
+        //Thread class, Multithreading
 
         System.out.println(Thread.activeCount());
         Thread.currentThread().setName("prior thread");
@@ -117,17 +131,20 @@ public class Main {
         thread2.setPriority(1);
         thread2.start();
         //System.out.println(thread2.isAlive());
+
         System.out.println(Thread.activeCount());
 
- */
-         MyThread thread1 = new MyThread();
 
-         MyRunnable runnable = new MyRunnable();
-         Thread thread2 = new Thread(runnable);
+        MyThread threadOne = new MyThread();
 
-         thread1.start();
-         thread1.join();
-         thread2.start();
+        MyRunnable runnable = new MyRunnable();
+        Thread threadTwo = new Thread(runnable);
+
+        threadOne.start();
+        threadOne.join();
+        threadTwo.start();
+
+
     }
 
 }

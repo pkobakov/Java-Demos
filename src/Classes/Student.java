@@ -1,5 +1,7 @@
 package Classes;
 
+//inheritance
+
 public class Student extends Person {
     String univercity;
     public Student(String name, int age, String university){

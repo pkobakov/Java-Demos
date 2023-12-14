@@ -4,6 +4,8 @@ import Contracts.IPerson;
 
 public class Person extends Eating implements IPerson {
 
+    //inheritance, encapsulation
+
     private String name;
     private int age;
 

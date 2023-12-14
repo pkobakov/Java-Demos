@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Collections {
+    //collections
+
     public int length;
     public List<String> names;
     public HashMap<String, Integer> population;
