@@ -43,7 +43,7 @@ public class Main {
                 .mapToObj(String::valueOf)
                 .collect(Collectors.joining(", ")));
 
-        // collections
+        // collections, streams, lambda
 
         Collections list = new Collections();
         Scanner scanner = new Scanner(System.in);
@@ -54,7 +54,8 @@ public class Main {
             command = scanner.nextLine();
         }
 
-        String result = list.names.stream().map(Objects::toString).collect(Collectors.joining(" and "));
+        String result = list.names.stream().filter(x -> x.contains("P")).map(Objects::toString).collect(Collectors.joining(" and "));
+
         System.out.println(result);
 
         // final, if else, Objects
