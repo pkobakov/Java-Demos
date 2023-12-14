@@ -5,7 +5,7 @@ And to share my first experience with Intellij IDEA. It contains examples for:
 - DataTypes
 - IF ELSE Conditionals
 - While, Switch and For loops
-- Usage of static and final keywords
+- Usage of final keyword
 - OOP,  Encapsulation, Abstraction, Polymorphism, Inheritance
 - Data structures
 - Collections
